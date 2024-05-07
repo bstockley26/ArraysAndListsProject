@@ -47,8 +47,6 @@ namespace ArraysAndLists
             foreach (int num in numbers)
             {
                 int i = num % 2;
-                
-
                 bool evenOrOdd = i > 0;
 
                 if (evenOrOdd==true)
@@ -60,16 +58,20 @@ namespace ArraysAndLists
                     evens.Add(num);
                 }
             }
+
             Console.WriteLine("evens:");
+
             foreach (int num in evens)
             {
 
                 Console.WriteLine(num);
             }
+
             Console.WriteLine("odds:");
-            for (int i=1; i<10;i+=2)
+
+            for (int i=0; i < odds.Count;i++)
             {
-                Console.WriteLine(i);
+                Console.WriteLine(odds[i]);
             }
         }
     }
